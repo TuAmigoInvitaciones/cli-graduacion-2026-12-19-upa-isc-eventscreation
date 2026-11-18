@@ -1,0 +1,223 @@
+{
+  "metaTitle": "UPA ISC | Graduación 2026",
+  "templateName": "graduacion-medianoche-estelar",
+  "eventType": "graduacion",
+  "packageTier": "oro",
+  "commercial": {
+    "packageName": "Oro VIP Premium (Sin Fotos)",
+    "basePrice": 1099.99,
+    "ticketPrice": 0,
+    "addonsPrice": 0,
+    "totalPrice": 1099.99
+  },
+  "theme": {
+    "fontPack": 4,
+    "palette": 9
+  },
+  "ui": {
+    "menu": {
+      "showMenu": true,
+      "variant": "bar",
+      "title": "UPA Sistemas Computacionales",
+      "buttonVariant": "icon"
+    },
+    "music": {
+      "showMusic": true,
+      "variant": "floating",
+      "title": "Música de Fondo",
+      "buttonVariant": "primary"
+    }
+  },
+  "config": {
+    "hasTicketingSystem": true,
+    "hasRSVP": true,
+    "hasMusic": true,
+    "hasMenu": true
+  },
+  "sections": {
+    "envelope": {
+      "showEnvelope": true,
+      "type": "video-apertura"
+    },
+    "hero": {
+      "showHero": true,
+      "names": "UPA",
+      "school": "Universidad Tecnológica de Aguascalientes",
+      "career": "Ing. Sistemas Computacionales",
+      "generation": "Generación 2022/2026",
+      "subtitle": "Nos complace invitarte a celebrar la culminación de una etapa",
+      "date": "19 DE DICIEMBRE DE 2026",
+      "city": "Aguascalientes, México"
+    },
+    "message": {
+      "showMessage": true,
+      "message": "Te invitamos de corazón a acompañarnos en este momento tan especial y celebrar juntos el amor que nos une."
+    },
+    "countdown": {
+      "showCountdown": true,
+      "targetDate": "2026-12-19T19:00:00"
+    },
+    "family": {
+      "showFamily": false,
+      "title": null,
+      "parents": [],
+      "godparents": []
+    },
+    "places": {
+      "showPlaces": true,
+      "locations": [
+        {
+          "title": "Ceremonia Religiosa",
+          "venue": "Parroquia de Nuestra Señora de La Anunciación",
+          "location": "Calle, Dr. G. Ramírez Valdez 102, 1a Sección, 20235 Aguascalientes, Ags.",
+          "time": "18:00 HRS",
+          "date": "2026-12-19",
+          "url": "https://maps.app.goo.gl/SdQqKupGT9YWGopAA"
+        },
+        {
+          "title": "Recepción & Fiesta",
+          "venue": "Salón Terraza Jardín El Herradero",
+          "location": "20326 Aguascalientes, Ags.",
+          "time": "20:00 HRS",
+          "date": "2026-12-19",
+          "url": "https://maps.app.goo.gl/fFBTcLyLAQChQ2aSA"
+        }
+      ]
+    },
+    "itinerary": {
+      "showItinerary": true,
+      "itinerary": [
+        {
+          "time": "19:00 HRS",
+          "event": "Ceremonia Religiosa"
+        },
+        {
+          "time": "21:00 HRS",
+          "event": "Recepción"
+        },
+        {
+          "time": "21:00 - 22:00 HRS",
+          "event": "Cocteles"
+        },
+        {
+          "time": "22:30 HRS",
+          "event": "Cena (3 tiempos)"
+        },
+        {
+          "time": "23:00 HRS",
+          "event": "Apertura de Pista"
+        },
+        {
+          "time": "01:00 HRS",
+          "event": "Música Banda"
+        },
+        {
+          "time": "03:00 HRS",
+          "event": "Fin del evento"
+        }
+      ]
+    },
+    "dressCode": {
+      "showDressCode": true,
+      "title": "Código de Vestimenta",
+      "description": "Les pedimos amablemente vestir de rigurosa etiqueta formal para acompañarnos en esta gran noche de graduación.",
+      "attire": {
+        "men": "Traje oscuro y corbata.",
+        "women": "Vestido largo o cocktail."
+      },
+      "colors": {
+        "suggested": [
+          "negro",
+          "azul oscuro"
+        ],
+        "avoid": [
+          "blanco",
+          "beige"
+        ]
+      }
+    },
+    "details": {
+      "showDetails": true,
+      "title": "Detalles Importantes",
+      "noKids": true,
+      "noKidsMessage": "Aunque amamos a los pequeños, la recepción es solo para adultos.",
+      "punctuality": true,
+      "punctualityMessage": "Te pedimos ser puntual para no perderte ningún momento especial de la celebración.",
+      "hashtag": "#GradUPAISC2026"
+    },
+    "presents": {
+      "showPresents": false,
+      "title": null,
+      "url": null,
+      "bankDetails": {
+        "bank": null,
+        "holder": null,
+        "clabe": null,
+        "account": null
+      },
+      "envelopeRain": null
+    },
+    "confirmation": {
+      "showConfirmation": false,
+      "type": null,
+      "isQuantityFree": null,
+      "whatsappPhone": null,
+      "whatsappMessage": null
+    },
+    "graduates": {
+      "showGraduates": true
+    },
+    "gallery": {
+      "showGallery": false,
+      "title": null,
+      "variant": null,
+      "maxPhotos": null
+    },
+    "guestPhotos": {
+      "showGuestPhotos": true,
+      "title": "Fotos de los Invitados",
+      "subtitle": "Comparte tus recuerdos y momentos de la fiesta con nosotros",
+      "albumUrl": "https://photos.app.goo.gl/eGjePDPChmy7Ta9YA"
+    },
+    "farewell": {
+      "showFarewell": true,
+      "hashtag": "#GradUPAISC2026",
+      "thankYouMessage": "Gracias por acompañarnos en este momento tan especial y celebrar juntos el gran logro que significa este paso en nuestras vidas."
+    },
+    "ticket": {
+      "showTicket": true
+    },
+    "addons": {
+      "lodgingAndWeather": {
+        "showLodging": false,
+        "title": "Hospedaje & Clima",
+        "hotels": [],
+        "weatherCity": "Aguascalientes"
+      },
+      "ourStory": {
+        "showOurStory": false,
+        "title": "Nuestra Historia",
+        "quoteOrPoem": "Por encima de todo, vístanse de amor.",
+        "timeline": []
+      },
+      "faqAndMenu": {
+        "showFaqAndMenu": false,
+        "title": "Preguntas Frecuentes & Menú",
+        "faqs": [],
+        "menuCourses": []
+      },
+      "playlistAndPhotos": {
+        "showPlaylistAndPhotos": true,
+        "title": "Música & Fotos de Invitados",
+        "qrAlbumUrl": "https://photos.app.goo.gl/xqUqNJ5Cvm9mjo7m8"
+      },
+      "monogram": {
+        "showMonogram": true,
+        "title": "Monograma del Evento"
+      },
+      "scratchReveal": {
+        "showScratchReveal": true
+      }
+    }
+  }
+}

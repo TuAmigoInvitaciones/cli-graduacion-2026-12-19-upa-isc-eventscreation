@@ -1,0 +1,99 @@
+@use '../../../common/styles/variables' as vars;
+@use '../../../common/styles/mixins' as mix;
+
+.message-section {
+    margin-top: -10rem;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @include mix.respondToMin('xs') {
+        margin-top: -15rem;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 55rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+
+        @include mix.respondToMin('xs') {
+            gap: 0.8rem;
+            max-width: 44rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        font-family: vars.$font-serif;
+        font-size: clamp(1.3rem, 4vw, 1.35rem);
+        font-weight: 300;
+        line-height: 1.8;
+        color: vars.$color-text-700;
+        letter-spacing: 0.5px;
+        margin: 0;
+        width: 90%;
+    }
+
+    &__signature {
+        font-family: vars.$font-cursive;
+        font-size: clamp(2.4rem, 6vw, 3.2rem);
+        color: vars.$color-primary;
+        line-height: 1;
+        margin-top: 0.5rem;
+    }
+
+    &__quote {
+        font-family: vars.$font-cursive;
+        font-size: clamp(3.5rem, 10vw, 5.5rem);
+        line-height: 0.6;
+        color: vars.$color-primary-900;
+        opacity: 0.18;
+        user-select: none;
+        pointer-events: none;
+
+        &--open {
+            align-self: flex-start;
+            margin-left: 1rem;
+
+            @include mix.respondToMin('xs') {
+                margin-left: 2.8rem;
+                margin-bottom: -0.6rem;
+            }
+        }
+
+        &--close {
+            align-self: flex-end;
+            margin-right: 1rem;
+            transform: rotate(180deg) translateY(-0.2em);
+            display: inline-block;
+
+            @include mix.respondToMin('xs') {
+                margin-right: 2.8rem;
+                margin-top: -0.6rem;
+            }
+        }
+    }
+
+    &__table {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 25rem;
+        }
+    }
+}

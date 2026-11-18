@@ -1,0 +1,215 @@
+@use '../../../common/styles/variables' as vars;
+@use '../../../common/styles/mixins' as mix;
+
+.graduates {
+    padding: 6rem 2rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$color-4-200;
+
+    @include mix.respondToMin('xs') {
+        padding-top: 8rem;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 960px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        width: 95%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        padding: 1rem;
+        box-sizing: border-box;
+        position: relative;
+
+        @include mix.respondToMin('xs') {
+            width: 85%;
+        }
+    }
+
+    &__content {
+        background-color: #fff;
+        border: 1px solid vars.$color-secondary;
+        padding: 3.5rem 3rem 4.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            border: 0.5px solid rgba(vars.$color-secondary, 0.6);
+            pointer-events: none;
+            z-index: 10;
+        }
+    }
+
+    &__quote {
+        font-family: vars.$font-sans;
+        font-size: clamp(0.9rem, 2.8vw, 1rem);
+        line-height: 1.6;
+        color: vars.$color-text-600;
+        margin: 0 0 1.5rem;
+        max-width: 90%;
+        font-style: italic;
+    }
+
+    &__sub-message {
+        font-family: vars.$font-serif;
+        font-size: 1rem;
+        color: vars.$color-text-500;
+        text-transform: uppercase;
+        margin: 2rem 0;
+        letter-spacing: 1px;
+
+        @include mix.respondToMin('xs') {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__columns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+
+    &__col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    &__col-divider {
+        width: 1px;
+        height: 35px;
+        background-color: rgba(vars.$color-secondary, 0.4);
+    }
+
+    &__col-label,
+    &__col-value {
+        font-family: vars.$font-serif;
+        font-size: 1rem;
+        color: vars.$color-text-500;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        @include mix.respondToMin('xs') {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__logo-container {
+        width: 100%;
+        max-width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem 0 0;
+    }
+
+    &__logo {
+        width: 75%;
+        height: auto;
+        display: block;
+    }
+
+    &__subtitle {
+        font-family: vars.$font-serif;
+        font-size: clamp(1rem, 2.8vw, 1.15rem);
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: vars.$color-secondary-800;
+        margin: 0;
+    }
+
+    &__prompt {
+        font-family: vars.$font-sans;
+        font-size: clamp(1rem, 2.5vw, 0.95rem);
+        line-height: 1.7;
+        color: vars.$color-text-600;
+        margin: 3.5rem 0 0;
+    }
+
+    &__careers-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        width: 100%;
+        max-width: 380px;
+        margin-top: 2rem;
+    }
+
+    &__career-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__career-name {
+        width: 80%;
+        font-family: vars.$font-serif;
+        font-size: clamp(1.05rem, 3vw, 1.25rem);
+        color: vars.$color-primary;
+        text-transform: uppercase;
+        margin: 0 0 1rem;
+        line-height: 1.4;
+    }
+
+    &__career-divider {
+        width: 50%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(vars.$color-secondary, 0.4), transparent);
+        margin: 0.5rem auto 2.2rem;
+    }
+
+    &__button {
+        @include mix.navyFoilButton(vars.$color-primary, vars.$color-4, vars.$font-sans);
+        margin-top: 1.2rem;
+    }
+
+    &__school-message-wrapper {
+        width: 100%;
+        max-width: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__school-divider {
+        margin: 0 auto;
+    }
+
+    &__school-message {
+        font-family: vars.$font-serif;
+        font-size: clamp(1.05rem, 2.8vw, 1.2rem);
+        line-height: 1.75;
+        color: vars.$color-text-600;
+        font-style: italic;
+        margin: 1.8rem 0;
+        max-width: 92%;
+    }
+}
