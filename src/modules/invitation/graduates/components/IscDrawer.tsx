@@ -36,7 +36,7 @@ export const IscDrawer: React.FC = () => {
                 )}
             </div>
 
-            <span className="drawer-monogram" aria-hidden="true">ISC</span>
+            <span className="drawer-monogram" aria-hidden="true">UPA</span>
         </Drawer>
     );
 };

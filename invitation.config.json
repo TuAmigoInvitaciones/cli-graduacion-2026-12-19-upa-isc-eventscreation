@@ -18,7 +18,7 @@
     "menu": {
       "showMenu": true,
       "variant": "bar",
-      "title": "UPA Sistemas Computacionales",
+      "title": "Sistemas Computacionales",
       "buttonVariant": "icon"
     },
     "music": {
@@ -42,7 +42,7 @@
     "hero": {
       "showHero": true,
       "names": "UPA",
-      "school": "Universidad Tecnológica de Aguascalientes",
+      "school": "Universidad Politécnica de Aguascalientes",
       "career": "Ing. Sistemas Computacionales",
       "generation": "Generación 2022/2026",
       "subtitle": "Nos complace invitarte a celebrar la culminación de una etapa",
