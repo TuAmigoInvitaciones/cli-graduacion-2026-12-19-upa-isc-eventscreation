@@ -4,7 +4,7 @@ import { motion, type Variants } from 'framer-motion'
 import bg from '@/assets/images/backgrounds/rsvp.jpeg'
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 import logo from '@/assets/images/icons/logo.svg'
-import { useDrawer } from '@/common/hooks'
+import { useDrawer, useInvitationConfig } from '@/common/hooks'
 import { DRAWER_NAMES, type DrawerName } from '@/store/ui/drawer.slice'
 
 const FLUID_EASE = [0.22, 1, 0.36, 1] as [number, number, number, number]
@@ -36,7 +36,12 @@ const careerItemVariants: Variants = {
 }
 
 export const GraduatesSection: React.FC = () => {
+    const { sections } = useInvitationConfig()
     const { onOpenDrawer } = useDrawer()
+
+    const school = (sections.hero?.school ?? 'Universidad Politécnica de Aguascalientes') as string;
+    const generation = (sections.hero?.generation ?? 'Generación 2022/2026') as string;
+
     const isSingleCareer = CAREERS.length === 1
 
     return (
@@ -80,8 +85,7 @@ export const GraduatesSection: React.FC = () => {
                                     viewport={{ once: true, margin: '-10% 0px' }}
                                     transition={{ duration: 1.0, delay: 0.5, ease: FLUID_EASE }}
                                 >
-                                    <p className="graduates__col-label">Centro de Estudios</p>
-                                    <p className="graduates__col-value">de Bachillerato 6/1</p>
+                                    <p className="graduates__col-label">{school}</p>
                                 </motion.div>
                                 <div className="graduates__col-divider" />
                                 <motion.div
@@ -91,8 +95,7 @@ export const GraduatesSection: React.FC = () => {
                                     viewport={{ once: true, margin: '-10% 0px' }}
                                     transition={{ duration: 1.0, delay: 0.5, ease: FLUID_EASE }}
                                 >
-                                    <p className="graduates__col-label">Generación</p>
-                                    <p className="graduates__col-value">2023 - 2026</p>
+                                    <p className="graduates__col-label">{generation}</p>
                                 </motion.div>
                             </div>
 
