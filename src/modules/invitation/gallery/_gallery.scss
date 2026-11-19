@@ -33,13 +33,13 @@
     &__stage {
         position: relative;
         width: 100%;
-        max-width: 34rem;
+        max-width: 38rem;
         margin: 0 auto;
         padding-right: 2rem;
         box-sizing: border-box;
 
         @include mix.respondToMin('xs') {
-            max-width: 41rem;
+            max-width: 48rem;
             padding-right: 2.4rem;
         }
     }
@@ -51,7 +51,7 @@
         max-width: 28rem;
         margin-top: -1rem;
         margin-left: auto;
-        margin-right: -4.2rem;
+        margin-right: -2rem;
         padding: 1rem;
         background-size: cover;
         background-position: center;
@@ -64,7 +64,7 @@
             width: 84%;
             max-width: 32rem;
             margin-top: -1rem;
-            margin-right: -5rem;
+            margin-right: -3rem;
             padding: 1.1rem;
         }
     }
@@ -142,13 +142,13 @@
 .gallery-deck {
     position: relative;
     width: 100%;
-    max-width: 30rem;
-    aspect-ratio: 4 / 5.2;
+    max-width: 35rem;
+    aspect-ratio: 5 / 4;
     margin: 0 auto;
     user-select: none;
 
     @include mix.respondToMin('xs') {
-        max-width: 35rem;
+        max-width: 44rem;
     }
 }
 
